@@ -1,5 +1,9 @@
 const prompt = require("prompt-sync")()
 
+
+const subtotal = Number(prompt("Subtotal do pedido: "))
+const frete = calcularFrete(subtotal)
+
 function calcularFrete(subtotal) {
   if (subtotal >= 80) {
     return 0
@@ -8,8 +12,7 @@ function calcularFrete(subtotal) {
   return 10
 }
 
-const subtotal = Number(prompt("Subtotal do pedido: "))
-const frete = calcularFrete(subtotal)
+
 
 console.log(frete)
 

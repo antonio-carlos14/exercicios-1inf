@@ -1,10 +1,10 @@
 const prompt = require("prompt-sync")()
 
-const calcularSubtotal = (preco, quantidade) => preco * quantidade)
+const calcularSubtotal = (preco, quantidade) => preco * quantidade
 
 const calcularTotalComFrete = (preco, quantidade, frete) => {
   const subtotal = calcularSubtotal(preco, quantidade)
-  return subtotal + frete;
+  return subtotal + frete
 }
 
 const preco = Number(prompt("Preço do produto: "))
